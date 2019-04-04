@@ -35,3 +35,13 @@ print(f'{a}: {type(a)}')
 print(f'{b}: {type(b)}')
 print(f'{c}: {type(c)}')
 
+#########
+
+# list
+list_num = [1, 2, 3, 1, 4, 5, 6]
+
+# tuple(immutable)
+tuple_num = (1, 2, 3, 4, 5, 6)
+
+# set(unique & unordered)
+set_num = {1, 2, 3, 4, 5}
