@@ -35,13 +35,65 @@ print(f'{a}: {type(a)}')
 print(f'{b}: {type(b)}')
 print(f'{c}: {type(c)}')
 
-#########
+##############
 
 # list
-list_num = [1, 2, 3, 1, 4, 5, 6]
+my_list = [1, 2, 3, 1, 4, 5, 6]
 
 # tuple(immutable)
-tuple_num = (1, 2, 3, 4, 5, 6)
+my_tuple = (1, 2, 3, 4, 5, 6)
 
 # set(unique & unordered)
-set_num = {1, 2, 3, 4, 5}
+my_set = {1, 3, 2, 3, 5, 4}
+
+
+# list methods and operations
+# .append() method
+my_list.append(100)
+print(my_list)
+
+# .remove() method
+my_list.remove(100)
+print(my_list)
+
+# list
+my_list += [100]
+print(my_list)
+
+# list index
+print(my_list[0])
+
+# tuple
+my_tuple += (100,)
+print(my_tuple)
+
+try:
+	my_tuple[0] = 100
+except:
+	print('tuple is immutable!')
+
+# set
+print(f'set is unique: {my_set}')
+
+try:
+	my_set[0] = 100
+except:
+	print('set is unordered!')
+
+my_set.add(6)
+print(my_set)
+
+your_lottery_numbers = {1, 2, 3, 4, 5}
+winning_numbers = {1, 3, 5, 7, 9, 11}
+
+# .intersection() method
+print(your_lottery_numbers.intersection(winning_numbers))
+# .union() method
+print(your_lottery_numbers.union(winning_numbers))
+# .difference() method
+print(your_lottery_numbers.difference(winning_numbers))
+
+
+
+
+
