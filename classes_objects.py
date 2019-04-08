@@ -91,3 +91,5 @@ print(date2.year)
 print(Date.from_strings('11-09-2012'))
 print('is_date: {}'.format(is_date))
 
+https://stackoverflow.com/questions/12179271/meaning-of-classmethod-and-staticmethod-for-beginner
+
