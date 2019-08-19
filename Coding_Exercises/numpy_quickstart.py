@@ -11,6 +11,9 @@ x = numpy.array([1, 2, 1] )
 y = numpy.array([[ 1., 0., 0.],[0., 1., 2.]])
 # z has 2 axes. the first axis has a length of 3, the second axis has a length of 4.
 z = numpy.arange(12).reshape(3,4)
+print(x)
+print(y)
+print(z)
 
 
 # important properties
