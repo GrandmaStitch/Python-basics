@@ -18,7 +18,6 @@ y = 1.55
 true_boolean = True
 false_boolean = False
 
-
 # Basic math
 total1 = num1 + num2
 total2 = num1 - num2
@@ -26,8 +25,8 @@ total3 = num1 * num2
 total4 = num1 / num2
 total5 = num1 % num2
 
-
 # Casting
+print("#String Casting")
 a = str(num1)
 b = int(x)
 c = float(num1)
@@ -46,15 +45,14 @@ my_tuple = (1, 2, 3, 4, 5, 6)
 # set(unique & unordered)
 my_set = {1, 3, 2, 3, 5, 4}
 
-
 # list methods and operations
 # .append() method
 my_list.append(100)
-print(my_list)
+print(f"list .append() method result: {my_list}")
 
 # .remove() method
 my_list.remove(100)
-print(my_list)
+print(f"list .remove() method result: {my_list}")
 
 # list
 my_list += [100]
@@ -80,6 +78,7 @@ try:
 except:
 	print('set is unordered!')
 
+print("#set methods")
 my_set.add(6)
 print(my_set)
 
@@ -92,6 +91,19 @@ print(your_lottery_numbers.intersection(winning_numbers))
 print(your_lottery_numbers.union(winning_numbers))
 # .difference() method
 print(your_lottery_numbers.difference(winning_numbers))
+
+# String formatting in Python
+print("# f-strings")
+name = "Bob"
+print(f"Hello, {name}")
+print("# .format()")
+greeting = "Hello, {}"
+with_name = greeting.format(name)
+with_name_two = greeting.format("Rolf")
+print(with_name)
+print(with_name_two)
+
+
 
 
 
